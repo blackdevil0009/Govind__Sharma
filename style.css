@@ -1,0 +1,161 @@
+/* Reset & basic styles */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: #0d0d0d;
+  color: #00fff7;
+  overflow-x: hidden;
+}
+
+/* Animated background canvas */
+canvas#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 100px 20px 50px 20px;
+}
+header h1 {
+  font-size: 3em;
+  color: #00fff7;
+  text-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7;
+}
+header p {
+  font-size: 1.2em;
+  color: #00ffea88;
+  margin-top: 10px;
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+/* Profile Section */
+#profile {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid #00fff7;
+  box-shadow: 0 0 20px #00fff7, 0 0 40px #00fff7;
+  transition: 0.3s;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 0 40px #00fff7, 0 0 80px #00fff7;
+}
+
+.profile-info h3 {
+  font-size: 1.8em;
+  color: #00fff7;
+  text-shadow: 0 0 10px #00fff7;
+}
+
+.profile-info p {
+  font-size: 1.1em;
+  color: #00ffea88;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #00fff7;
+  text-shadow: 0 0 5px #00fff7;
+  border-bottom: 2px solid #00fff7;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  margin-top: 20px;
+  color: #0d0d0d;
+  background: #00fff7;
+  border: 2px solid #00fff7;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 0 5px #00fff7, 0 0 15px #00fff7;
+}
+/* WhatsApp Button */
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 25px;
+  margin-top: 10px;
+  color: #0d0d0d;
+  background: #25D366; /* WhatsApp green */
+  border: 2px solid #25D366;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+  box-shadow: 0 0 5px #25D366, 0 0 15px #25D366;
+}
+.btn-whatsapp:hover {
+  color: #25D366;
+  background: transparent;
+  box-shadow: 0 0 20px #25D366, 0 0 40px #25D366;
+}
+
+.btn:hover {
+  color: #00fff7;
+  background: transparent;
+  box-shadow: 0 0 20px #00fff7, 0 0 40px #00fff7;
+}
+
+/* Cards */
+.card {
+  background: rgba(0, 255, 247, 0.05);
+  border: 1px solid #00fff7;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00fff733;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #00fff7, 0 0 40px #00fff7;
+}
+
+/* Flex layout */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: #00fff799;
+  border-top: 1px solid #00fff7;
+}
